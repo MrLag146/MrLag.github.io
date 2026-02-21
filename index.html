@@ -193,6 +193,11 @@ volumeSlider.addEventListener("input", () => {
     music.volume = volumeSlider.value;
 });
 
+document.addEventListener("click", () => {
+    music.play().catch(() => {});
+}, { once: true });
+
+
 /* Play on first click */
 document.addEventListener("click", () => {
     music.play().catch(() => {});
