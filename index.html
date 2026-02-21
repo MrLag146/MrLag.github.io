@@ -219,7 +219,7 @@ async function fetchDiscord() {
         const res = await fetch("https://api.lanyard.rest/v1/users/646273965769359380");
         const data = await res.json();
         const status = data.data.discord_status;
-        document.getElementById("discordStatus").innerText = "Discord: " + status;
+        document.getElementById("discordStatus").innerText = "Discord: " + state;
     } catch {
         document.getElementById("discordStatus").innerText = "Discord: unavailable";
     }
